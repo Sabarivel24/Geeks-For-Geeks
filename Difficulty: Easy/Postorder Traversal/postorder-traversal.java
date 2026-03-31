@@ -10,17 +10,16 @@ class Node {
 */
 
 class Solution {
-    ArrayList<Integer>res;
+    ArrayList<Integer>ans;
     public void func(Node root){
-        if(root==null)return;
+        if(root==null)return ;
         func(root.left);
         func(root.right);
-        res.add(root.data);
+        ans.add(root.data);
     }
     public ArrayList<Integer> postOrder(Node root) {
-        // code here
-        res=new ArrayList<>();
-        func(root);
-        return res;
+       ans=new ArrayList<>();
+       func(root);
+       return ans;
     }
 }
