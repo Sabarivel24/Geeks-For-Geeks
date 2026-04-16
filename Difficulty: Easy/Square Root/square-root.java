@@ -1,6 +1,7 @@
 class Solution {
     int floorSqrt(int n) {
-        // code here
+        if(n==1)return 1;
         return (int)Math.sqrt(n);
+        
     }
 }
